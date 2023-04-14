@@ -1,0 +1,120 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color:rgba(220,220,220, .2);
+  display: flex;
+  min-height: 100vh;
+}
+
+
+main {
+  width: 768px;
+  height: 432px;
+  border-radius: 6px;
+  padding: 60px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,.15), 0 0 30px rgba(0,0,0,.1);
+  display: flex;
+  margin: auto;
+}
+
+
+.c-button {
+  background-color: 	rgb(65,105,225);
+  border-radius: 30px;
+  color: rgb(248,248,255);
+  display: inline-block;
+  text-decoration: none;
+  padding: 9px 15px;
+  text-align: center;
+  max-width: 220px;
+}
+
+
+.c-card {
+  border-radius: 6px;
+  /* box-shadow: 0 0 15px rgba(0,0,0,.15), 0 0 30px rgba(0,0,0,.1); */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px 60px;
+}
+
+.c-card--index {
+  background-color: 		rgb(255,248,220);
+  clip-path: circle(1000% at 90% 18%);
+}
+
+.c-card--instagram {
+  background-color: 	rgb(220,20,60);
+  clip-path: circle(0% at 81% 87%);
+}
+
+.c-card--twitter {
+  background-color: 	rgb(147,112,219);
+  clip-path: circle(0% at 90.8% 87%);
+}
+
+.c-card--linkedin {
+  background-color: rgb(0,191,255);
+  clip-path: circle(0% at 85.8% 87%);
+}
+
+.c-card__title {
+  font-weight: normal;
+  height: 1;
+}
+
+.c-card__title span{
+  flex: 1;
+  width: 100%;
+  display: inline-block;
+  font-size: 210%;
+  font-weight: bolder;
+}
+
+.c-card__text {
+  margin: 24px 0;
+  height: 1.6;
+}
+
+.c-menu {
+  list-style: none;
+  position: absolute;
+  display: flex;
+  bottom: 40px;
+  right: 60px;
+  gap: 16px;
+  z-index: 200;
+}
+
+.c-menu__btnToggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.c-menu__btnToggle i{
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.c-menu__item--index {
+  position: absolute;
+  top: -300px;
+  right: 0;
+}
+
+.menu__item--active {
+  pointer-events: none;
+}
+
+.menu__item--active i{
+  pointer-events: none;
+  color: white;
+}
